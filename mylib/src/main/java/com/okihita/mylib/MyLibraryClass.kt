@@ -11,3 +11,5 @@ class MyLibraryClass {
         }
     }
 }
+
+fun returnHello(): String = "Hello"
