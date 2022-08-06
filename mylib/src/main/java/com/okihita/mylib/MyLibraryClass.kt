@@ -2,6 +2,7 @@ package com.okihita.mylib
 
 import android.content.Context
 import android.widget.Toast
+import com.okihita.mylib.MyObfuscatedClass
 
 class MyLibraryClass {
 
@@ -12,4 +13,4 @@ class MyLibraryClass {
     }
 }
 
-fun returnHello(): String = "Hello"
+fun returnHello(): String = MyObfuscatedClass.returnSomethingSecret()

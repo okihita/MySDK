@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.okihita.myapplication.ui.main.MainFragment
 import com.okihita.mylib.MyLibraryClass
+import com.okihita.mylib.returnHello
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
 
-        MyLibraryClass.createGreeter(this, "Xena")
+        MyLibraryClass.createGreeter(this, "Xena, " + returnHello())
+
     }
 }
